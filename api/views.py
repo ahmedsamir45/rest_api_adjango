@@ -20,7 +20,7 @@ class BlogPostRetriveUpdateDestory(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = "pk"
 
 class BlogPostList(APIView):
-    def get(self,request,format=None)
+    def get(self,request,format=None):
         title=request.query_params.get("title","")
 
         if title:
